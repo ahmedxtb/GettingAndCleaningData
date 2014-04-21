@@ -23,6 +23,6 @@ This script performs the analysis in four steps :
 
 4. The scripts then proceeds to create an independant data set with the average of each variable for each activity and each subject by using the aggregate() function on "clean.data". The result is a data frame called "tidy.data" with 180 rows and 68 columns, the columns are the same as "clean.data" minus "Activity_Id" which is not necessary as "Activity" is clearer, the rows contains the average value of each variable for each subject and each activity. Finally, the script writes "tidy.data" to a csv file named "dataset-tidy.csv".
 
-## Code book
+## Code book file
 
 The file "CodeBook.md" describes the format of the data originally provided for this project and the tidy data obtained after performing the "run_analysis.R" script on this data (type of the variables and the possible values for them).

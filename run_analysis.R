@@ -1,4 +1,4 @@
-## Necessary packages
+## Necessary package
 
 library(stats)
 

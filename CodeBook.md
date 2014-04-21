@@ -1,7 +1,7 @@
 Coursera Getting and Cleaning Data Project Code Book
 ===========
 
-## Raw data from "UCI HAR Dataset"
+## Raw data ("UCI HAR Dataset")
 
 The raw data provided for the project were extracted from experiments that have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 
