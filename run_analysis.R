@@ -2,7 +2,7 @@
 
 library(stats)
 
-## Function definitions
+## Functions definitions
 
 clean_data <- function(test, train) {
     ## Reads the test and train data sets
