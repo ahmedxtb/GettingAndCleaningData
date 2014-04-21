@@ -53,11 +53,11 @@ train.subject <- read.table("UCI HAR Dataset/train/subject_train.txt")
 train.activity.id <- read.table("UCI HAR Dataset/train/y_train.txt")
 train.data.bind <- cbind(train.subject, train.activity.id, train.activity.id, train.data)
 
-## Third step : application of the clean_data() function to the.data.bind and train.data.bind to obtain clean.data
+## Third step : application of the clean_data() function to test.data.bind and train.data.bind to obtain clean.data
 
 clean.data <- clean_data(test.data.bind, train.data.bind)
 
-## Fourth step : application of the tidy_data() function to raw.data to obtain the tidy data set and writes the
+## Fourth step : application of the tidy_data() function to clean.data to obtain the tidy data set and writes the
 ## resulting data frame in a file dataset-tidy.csv
 
 tidy.data <- tidy_data(clean.data)
