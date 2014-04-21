@@ -53,7 +53,7 @@ train.subject <- read.table("UCI HAR Dataset/train/subject_train.txt")
 train.activity.id <- read.table("UCI HAR Dataset/train/y_train.txt")
 train.data.bind <- cbind(train.subject, train.activity.id, train.activity.id, train.data)
 
-## Third step : application of the raw_data() function to the.data.bind and train.data.bind to obtain raw.data
+## Third step : application of the clean_data() function to the.data.bind and train.data.bind to obtain clean.data
 
 clean.data <- clean_data(test.data.bind, train.data.bind)
 
