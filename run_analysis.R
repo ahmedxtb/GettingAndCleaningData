@@ -61,7 +61,7 @@ train.data.bind <- cbind(train.subject, train.activity.id, train.activity.id, tr
 clean.data <- clean_data(test.data.bind, train.data.bind)
 
 ## Fourth step : application of the tidy_data() function to clean.data to obtain the tidy data set and writes the
-## resulting data frame in a file dataset-tidy.csv
+## resulting data frame in a csv file dataset-tidy.txt
 
 tidy.data <- tidy_data(clean.data)
 write.csv(tidy.data, file = "dataset-tidy.txt", row.names = FALSE)
