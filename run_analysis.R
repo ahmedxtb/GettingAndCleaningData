@@ -29,6 +29,7 @@ clean_data <- function(test, train) {
 tidy_data <- function(clean) {
     ## Reads the raw data set obtained in the previous step
     ## Aggregates the raw data set to compute the averages of each variable for each activity and each subject
+    ## Sorts rows in subject order and tidies the column names by removing "()" and replacing "BodyBody" by "Body"
     
     ## Returns a data frame which contains the averages of each variable for each activity and each subject
     
@@ -36,6 +37,8 @@ tidy_data <- function(clean) {
     names(agreg.data)[1:2] <- c("Subject", "Activity")
     agreg.data <- agreg.data[order(agreg.data$Subject), ]
     row.names(agreg.data) <- NULL
+    names(agreg.data) <- sub("\\(\\)", "", names(agreg.data))
+    names(agreg.data) <- sub("BodyBody", "Body", names(agreg.data))
     agreg.data
 }
 
@@ -61,5 +64,5 @@ clean.data <- clean_data(test.data.bind, train.data.bind)
 ## resulting data frame in a file dataset-tidy.csv
 
 tidy.data <- tidy_data(clean.data)
-write.csv(tidy.data, file = "dataset-tidy.csv", row.names = FALSE)
+write.csv(tidy.data, file = "dataset-tidy.txt", row.names = FALSE)
 
