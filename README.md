@@ -11,7 +11,7 @@ In this GitHub repository you'll find :
 
 ## R analysis script
 
-The "run_analysis.R" script when run performs the required analysis (provided the "UCI HAR Dataset" directory is in the working directory). It needs the "stats" package to be loaded to work fine. This script will return a csv file named "dataset-tidy.csv" which is the independant tidy data set required for the project.
+The "run_analysis.R" script when run performs the required analysis (provided the "UCI HAR Dataset" directory is in the working directory). It needs the "stats" package to be loaded to work fine. This script will return a csv file named "dataset-tidy.txt" which is the independant tidy data set required for the project.
 
 This script performs the analysis in four steps :
 
