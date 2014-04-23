@@ -27,8 +27,8 @@ clean_data <- function(test, train) {
 }
 
 tidy_data <- function(clean) {
-    ## Reads the raw data set obtained in the previous step
-    ## Aggregates the raw data set to compute the averages of each variable for each activity and each subject
+    ## Reads the clean data set obtained in the previous step
+    ## Aggregates the clean data set to compute the averages of each variable for each activity and each subject
     ## Sorts rows in subject order and tidies the column names by removing "()" and replacing "BodyBody" by "Body"
     
     ## Returns a data frame which contains the averages of each variable for each activity and each subject
